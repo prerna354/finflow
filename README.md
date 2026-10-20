@@ -67,14 +67,14 @@ docker compose up --build
 
 | What | Where |
 |---|---|
-| Web app | http://localhost:5173 |
-| API docs (Swagger) | http://localhost:8000/docs |
+| Web app | http://localhost:5174 |
+| API docs (Swagger) | http://localhost:8001/docs |
 
 A first admin is created from `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `.env` (default `admin@finflow.com` / `Admin@12345`). **Change these before deploying anywhere.**
 
 ## Quick demo
 
-1. Open http://localhost:5173 and create two accounts (for example Prerna and Rahul). Use two different browsers or a private window for the second user.
+1. Open http://localhost:5174 and create two accounts (for example Prerna and Rahul). Use two different browsers or a private window for the second user.
 2. As Prerna, pay Rahul 500: it becomes **APPROVED** live.
 3. Pay 60000 and 120000: see **FLAGGED** and **REJECTED** with reasons.
 4. Double-click **Pay** quickly: only one payment is created (idempotency).
