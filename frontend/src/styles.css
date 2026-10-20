@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f6fb; color: #1b2430; }
+h1 { margin: 0; font-size: 1.6rem; }
+h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.muted { color: #6b7686; }
+.small { font-size: 0.85rem; }
+.center { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
+.page { max-width: 1000px; margin: 0 auto; padding: 20px 16px 60px; display: grid; gap: 16px; }
+header { display: flex; justify-content: space-between; align-items: center; }
+.right { display: flex; gap: 12px; align-items: center; }
+.card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 4px rgba(20, 30, 50, 0.08); }
+.login { width: 100%; max-width: 380px; display: grid; gap: 12px; }
+input { padding: 10px 12px; border: 1px solid #cdd5e0; border-radius: 8px; font-size: 1rem; width: 100%; }
+button { padding: 10px 16px; border: 0; border-radius: 8px; background: #2b59ff; color: #fff; font-size: 1rem; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: wait; }
+button.secondary { background: #e6eaf2; color: #1b2430; }
+button.link { background: none; color: #2b59ff; padding: 4px; }
+.row { display: grid; grid-template-columns: 2fr 1fr auto; gap: 10px; }
+.error { background: #fdecec; color: #b42318; padding: 10px; border-radius: 8px; margin-top: 10px; }
+.ok { background: #e8f7ee; color: #12683a; padding: 10px; border-radius: 8px; margin-top: 10px; }
+.role { text-transform: capitalize; font-weight: 600; }
+.live { font-size: 0.9rem; color: #9aa4b2; }
+.live.on { color: #12a150; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+.stat { display: grid; gap: 4px; text-align: center; }
+.stat b { font-size: 1.6rem; }
+.stat span { color: #6b7686; font-size: 0.8rem; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #edf0f5; white-space: nowrap; }
+th { color: #6b7686; font-weight: 600; }
+td.muted { white-space: normal; min-width: 160px; }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+.badge.PENDING { background: #eef1f6; color: #4a5568; }
+.badge.APPROVED { background: #e8f7ee; color: #12683a; }
+.badge.FLAGGED { background: #fff4db; color: #92600a; }
+.badge.REJECTED { background: #fdecec; color: #b42318; }
+@media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
