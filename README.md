@@ -4,6 +4,10 @@ A payment platform that moves money safely, stops duplicate payments, and checks
 
 **Tech:** Python, FastAPI, React, PostgreSQL, Redis, Celery, WebSockets, Docker
 
+## Screenshot
+
+![FinFlow dashboard](docs/screenshots/dashboard.png)
+
 ## Problem
 
 - Users tap "Pay" twice on a slow network and get charged twice.
